@@ -6,6 +6,7 @@ import pandas_profiling
 from io import BytesIO
 import joblib
 import base64
+import matplotlib.pyplot as plt
 from streamlit_pandas_profiling import st_profile_report
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
@@ -68,7 +69,7 @@ def upload_data():
 
 def overview():
     st.title("Diabetes Dataset Overview")
-    st.write("Akan dilakukan Profiling untuk Dataset, agar mengetahui informasi dari Dataset yang akan digunakan.")
+    st.write("Akan dilakukan Exploratory Data Analysis (EDA) untuk Dataset, agar mengetahui informasi dari Dataset yang akan digunakan.")
 
     if "df" not in st.session_state:
         st.session_state.df = None
@@ -130,7 +131,7 @@ def split_data():
 def model():
     st.title("Setup Dataset untuk dilakukan Klasifikasi")
     st.write("Pada Tahapan ini, akan mempersiapkan dataset untuk diklasifikasi. Dataset akan di preprocess n\
-    untuk menghilangkan missing value, dan menghilangkan ketidakseimbangan pada kolom categorical.")
+        menggunakan SMOTE untuk menghilangkan ketidakseimbangan pada kolom categorical.")
 
     if "df_clean" not in st.session_state:
         st.session_state.df_clean = None
@@ -144,6 +145,29 @@ def model():
                 setup_df = pull()
                 st.write("Setup Klasifikasi pada Dataset yang akan digunakan:")
                 st.dataframe(setup_df, use_container_width=True)
+                train_transformed = get_config('train_transformed')
+                test_transformed = get_config('test_transformed')
+
+                st.write("Transformed Traning Data shape:", train_transformed.shape)
+                st.dataframe(train_transformed, use_container_width=True)
+
+                # st.write("Transformed Test Data shape:", test_transformed.shape)
+                # st.dataframe(test_transformed, use_container_width=True)
+
+                st.write("Training Data yang telah bersih dari ketidakseimbangan data:")
+                pd.value_counts(train_transformed['Outcome']).plot.bar()
+                plt.title('Outcome')
+                plt.xlabel('Kelas')
+                plt.ylabel('Jumlah')
+                train_transformed['Outcome'].value_counts()
+                st.pyplot(plt)
+
+                # for column in train_transformed.columns:
+                #     value_counts = train_transformed['Outcome'].value_counts()
+                #     value_counts_df = pd.DataFrame({'Value': value_counts.index, 'Count': value_counts.values})
+                #     fig = px.bar(value_counts_df, x='Value', y='Count', title=f'Value Count Bar Chart of' ['Outcome'])
+                #     st.plotly_chart(fig)
+
 
 def best_rf():
     st.title("Hyperparameter Tuning untuk Algoritma Random Forest")
