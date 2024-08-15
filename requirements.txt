@@ -4,8 +4,7 @@ scipy
 matplotlib==3.7.0
 streamlit
 ydata-profiling
-openpyxl
-xlrd
+pycaret
 #requirements copied from https://github.com/ydataai/ydata-profiling/blob/develop/requirements.txt
 plotly==5.23.0
 tqdm>=4.48.2, <5
