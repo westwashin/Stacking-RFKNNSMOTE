@@ -2,7 +2,7 @@ numpy
 pandas
 scipy
 matplotlib
-sklearn
+scikit-learn
 imblearn
 pycaret
 streamlit
