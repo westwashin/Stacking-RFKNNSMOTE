@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import os
 import pickle
-import ydata_profiling
 from io import BytesIO
 import joblib
 import base64
