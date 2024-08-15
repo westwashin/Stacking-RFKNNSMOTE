@@ -7,6 +7,7 @@ ydata-profiling
 streamlit-pandas-profiling
 openpyxl
 xlrd
+visions
 #requirements copied from https://github.com/ydataai/ydata-profiling/blob/develop/requirements.txt
 plotly==5.23.0
 tqdm>=4.48.2, <5
