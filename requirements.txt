@@ -4,4 +4,3 @@ streamlit
 ydata-profiling
 pandas-datareader
 prophet
-pandas-profiling
