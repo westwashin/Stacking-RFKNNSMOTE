@@ -1,6 +1,5 @@
 numpy
 pandas
-pickle
 io
 joblib
 base64
