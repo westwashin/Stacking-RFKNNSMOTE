@@ -1,10 +1,12 @@
-numpy
 pandas
+plotly
+streamlit
+ydata-profiling
 io
 joblib
 base64
 matplotlib
 sklearn
 imblearn
-ydata-profiling
 pycaret
+scipy
