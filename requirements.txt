@@ -3,4 +3,4 @@ plotly
 streamlit
 ydata-profiling
 pandas-datareader
-prophet
+pycaret
