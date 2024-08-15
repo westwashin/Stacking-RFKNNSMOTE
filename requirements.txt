@@ -4,3 +4,5 @@ streamlit
 ydata-profiling
 pandas-datareader
 pycaret
+scipy
+pickle
