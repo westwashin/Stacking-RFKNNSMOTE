@@ -1,9 +1,5 @@
 numpy
 pandas
-scipy
-matplotlib
-scikit-learn
-imblearn
 pycaret
 streamlit
 ydata-profiling
