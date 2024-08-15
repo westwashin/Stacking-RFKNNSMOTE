@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 import pickle
-import pandas_profiling
+import ydata_profiling
 from io import BytesIO
 import joblib
 import base64
@@ -17,6 +17,8 @@ from sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import StackingClassifier
 from imblearn.over_sampling import SMOTE
+
+from ydata_profiling import ProfileReport
 
 
 from pycaret.classification import *
