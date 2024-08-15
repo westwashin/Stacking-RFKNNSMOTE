@@ -1,6 +1,6 @@
 pandas
 plotly
 streamlit
-ydata_profiling
+ydata-profiling
 pandas-datareader
 prophet
