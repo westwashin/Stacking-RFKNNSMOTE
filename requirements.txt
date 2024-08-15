@@ -1,12 +1,11 @@
 numpy
 visions
-
 pandas
 scipy
 matplotlib==3.7.0
 streamlit
 ydata-profiling
-streamlit-pandas-profiling
+streamlit-ydata-profiling
 openpyxl
 xlrd
 #requirements copied from https://github.com/ydataai/ydata-profiling/blob/develop/requirements.txt
