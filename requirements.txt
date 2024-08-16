@@ -1,5 +1,4 @@
-pandas
-numpy
-ydata_profiling\
-openpyxl
-pycaret
+streamlit==1.15.0
+pandas==1.3.3
+ydata-profiling==3.1.1
+pycaret==2.3.4
