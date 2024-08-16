@@ -1,5 +1,5 @@
 streamlit
+visions==0.7.5
 pandas
 ydata_profiling
 streamlit_pandas_profiling
-visions==0.7.5
