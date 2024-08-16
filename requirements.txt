@@ -6,3 +6,4 @@ openpyxl
 nbformat
 streamlit_pandas_profiling
 pycaret
+phik==0.11.1
