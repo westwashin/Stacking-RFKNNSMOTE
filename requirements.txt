@@ -1,6 +1,5 @@
 pandas
 numpy
-ydata_profiling
-pandas_profiling
+ydata_profiling\
 openpyxl
 pycaret
