@@ -6,6 +6,7 @@ from io import BytesIO
 import joblib
 import base64
 import matplotlib.pyplot as plt
+import ydata_profiling
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
@@ -15,9 +16,8 @@ from sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import StackingClassifier
 from imblearn.over_sampling import SMOTE
-
 from ydata_profiling import ProfileReport
-
+from streamlit_pandas_profiling import st_profile_report
 
 from pycaret.classification import *
 
