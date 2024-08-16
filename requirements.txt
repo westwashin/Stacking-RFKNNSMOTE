@@ -3,3 +3,4 @@ numpy
 ydata_profiling
 pandas_profiling
 openpyxl
+scikit-learn
