@@ -2,7 +2,7 @@ Streamlit
 ydata-profiling
 openpyxl
 nbformat
-streamlit_pandas_profiling
+streamlit-pandas-profiling
 pycaret
 Cython==3.0.11
 scipy>=1.4.1, <1.14
